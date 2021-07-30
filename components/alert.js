@@ -26,7 +26,7 @@ export default function Alert({ preview }) {
             <>
               This is page is showing published content.{' '}
               <a
-                href="/api/preview"
+                href="/api/preview?secret=heslop"
                 className="underline hover:text-cyan duration-200 transition-colors"
               >
                 Click here
