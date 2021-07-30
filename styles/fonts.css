@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'ObjectSans';
+    src: url('/fonts/ObjectSans-Regular.eot');
+    src: url('/fonts/ObjectSans-Regular.eot?#iefix')
+            format('embedded-opentype'),
+        url('/fonts/ObjectSans-Regular.woff2') format('woff2'),
+        url('/fonts/ObjectSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ObjectSans';
+    src: url('/fonts/ObjectSans-Bold.eot');
+    src: url('/fonts/ObjectSans-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('/fonts/ObjectSans-Bold.woff2') format('woff2'),
+        url('/fonts/ObjectSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

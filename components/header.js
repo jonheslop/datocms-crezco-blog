@@ -2,11 +2,38 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/">
-        <a className="hover:underline">Blog</a>
+    <header className="w-full my-12 flex gap-12 items-center">
+      <Link href="https://www.crezco.com/">
+        <a className="hover:underline">
+          <svg width="150" height="26" fill="none">
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M54.458 18.795a9.85 9.85 0 11-7.946-15.566 10.059 10.059 0 017.985 4.014l-4.234 3.083a4.516 4.516 0 00-3.751-2.117c-2.82-.039-4.83 2.044-4.83 4.878a4.689 4.689 0 004.83 4.83 4.325 4.325 0 003.79-2.157l4.156 3.035zm7.317 3.453h-5.224V3.863h12.575v4.493h-7.375l.024 13.892zm18.454-18.98c-5.571 0-9.693 4.234-9.693 9.805a9.56 9.56 0 009.756 9.658c2.97 0 6.088-1.302 7.805-3.712l-3.161-2.64a5.95 5.95 0 01-4.678 2.118 4.746 4.746 0 01-4.878-4.01h14.058c.034-.56.034-1.044.034-1.527-.034-6.126-3.936-9.692-9.268-9.692h.025zm.039 4.049c2.302 0 3.902 1.302 4.566 3.824h-9.42c.63-2.376 2.449-3.824 4.83-3.824h.024zm28.453 14.931H91.058v-4.346l10.214-9.546h-9.731V3.863h16.785v4.346l-10.214 9.547h10.585l.024 4.492zm11.517.522a9.858 9.858 0 007.947-3.975l-4.161-3.05a4.33 4.33 0 01-3.786 2.157 4.69 4.69 0 01-4.829-4.83c0-2.819 2.005-4.902 4.829-4.877a4.528 4.528 0 013.751 2.117l4.235-3.083a10.068 10.068 0 00-7.986-4.015 9.773 9.773 0 00-9.77 9.77 9.771 9.771 0 009.77 9.772v.014zm29.151-9.731a9.916 9.916 0 01-19.635 2.081 9.923 9.923 0 014.198-10.212 9.915 9.915 0 015.52-1.68 9.832 9.832 0 019.893 9.81h.024zm-14.448.034c0 2.785 2.005 4.878 4.531 4.829 2.522.039 4.532-2.044 4.532-4.83 0-2.785-2.01-4.902-4.532-4.877-2.551-.025-4.556 2.058-4.556 4.878h.025zM26 0v26h-5.2V5.2H0V0h26z"
+              fill="#2A6355"
+            />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M20.8 5.2V26h-5.2V10.4H0V5.2h20.8z"
+              fill="#9BCABE"
+            />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M15.6 10.4V26h-5.2V15.6H0v-5.2h15.6z"
+              fill="#F2EBE4"
+            />
+            <path d="M10.4 15.6H0V26h10.4V15.6z" fill="#F38173" />
+          </svg>
+        </a>
       </Link>
-      .
-    </h2>
-  )
+      <Link href="/">
+        <a className="hover:underline">
+          <h1 className="text-2xl">Blog</h1>
+        </a>
+      </Link>
+      <p className="text-xl ml-auto">A byline for the blog</p>
+    </header>
+  );
 }
