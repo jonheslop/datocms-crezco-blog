@@ -9,7 +9,8 @@ const combineColorWithOpacity = (rgbVar, opacityVariable, opacityValue) => {
 };
 
 module.exports = {
-  purge: [],
+  mode: "jit",
+  purge: ["./pages/*.js", "./components/*.js"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
